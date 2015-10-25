@@ -1,6 +1,7 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 
+
 # Create your models here.
 
 class Category(models.Model):
@@ -24,3 +25,5 @@ class Page(models.Model):
 
     def __unicode__(self):      #For Python 2, use __str__ on Python 3
         return self.title
+
+

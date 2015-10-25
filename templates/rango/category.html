@@ -19,4 +19,16 @@
         {% else %}
             The specified category {{ category_name }} does not exist!
         {% endif %}
+
+        {% if most_viewed_categories %}
+            <h2>Most Viewed Categories</h2>
+            <ul>
+                {% for page in pages %}
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <a href="/rango/category/{{ category_name_slug }}/add_page/">Add a Newpage</a><br />
     </body>
+</html>
