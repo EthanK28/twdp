@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends 'base.html' %}
 
+    {% block body_block %}
         <h1>Add a page</h1>
         {{ category_name_slug }}
         <form id="page_form" method="post" action="/rango/category/{{ category_name_slug }}/add_page/">
@@ -23,5 +18,4 @@
 
             <input type="submit" name="submit" value="Create Page" />
         </form>
-</body>
-</html>
+    {% endblock %}

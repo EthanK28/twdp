@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    <a href="/rango">Main</a><br />
+{% extends 'base.html' %}
+{% block title %}Rango{% endblock %}
+{% block body_block %}
+    <p> visits: {{ visits }}</p>
     <img src="{% static "images/Rango_screenshot_1.jpg" %}" alt=""/>
-</body>
-</html>
+{% endblock %}
